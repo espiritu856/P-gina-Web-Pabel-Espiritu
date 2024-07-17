@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Venta Online-Pabel Espiritu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Espiritu Ventas</h1>
+  </header>
+
+  <main>
+    <section class="disponibles">
+      <h2>Productos disponibles</h2>
+
+      <div class="producto">
+        <img src="assets/asus.png" alt="Producto 1">
+        <h3>Laptop Asus</h3>
+        <p>$800.00</p>
+        <button class="btn-agregar" data-id="1">Agregar</button>
+      </div>
+
+      <div class="producto">
+        <img src="assets/taza star wars.jpg" alt="Producto 2">
+        <h3>Taza Star wars</h3>
+        <p>$20.00</p>
+        <button class="btn-agregar" data-id="2">Agregar</button>
+      </div>
+
+      <div class="producto">
+        <img src="assets/Televisor.jpg" alt="Producto 3">
+        <h3>Televisor 40"</h3>
+        <p>$350</p>
+        <button class="btn-agregar" data-id="3">Agregar</button>
+      </div>
+
+      <div class="producto">
+        <img src="assets/Playstation.jpg" alt="Producto 4">
+        <h3>PlayStation 5</h3>
+        <p>$400.00</p>
+        <button class="btn-agregar" data-id="4">Agregar</button>
+      </div>
+
+      <div class="producto">
+        <img src="assets/xbox.jpg" alt="Producto 5">
+        <h3>Xbox Series X</h3>
+        <p>$450.00</p>
+        <button class="btn-agregar" data-id="5">Agregar</button>
+      </div>
+
+      <div class="producto">
+        <img src="assets/Pc.jpg" alt="Producto 6">
+        <h3>PC Gamer</h3>
+        <p>$1200.00</p>
+        <button class="btn-agregar" data-id="6">Agregar</button>
+      </div>
+
+    </section>
+
+    <section class="agenda">
+      <h2>Agenda tu producto</h2>
+
+      <form>
+        <div class="campo">
+          <label for="producto">Producto:</label>
+          <select id="producto">
+            <option value="">Seleccione un producto</option>
+          </select>
+        </div>
+
+        <div class="campo">
+          <label for="cantidad">Cantidad:</label>
+          <input type="number" id="cantidad" min="1" value="1">
+        </div>
+
+        <button type="submit" class="btn-enviar">Enviar</button>
+        <button type="reset" class="btn-limpiar">Limpiar</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
